@@ -13,7 +13,7 @@ function App() {
   setResult(null);
 
   try {
-    const response = await axios.post('http://localhost:5000/analyze', { text });
+const response = await axios.post('https://emotion-reflection-backend.onrender.com/analyze', { text });
     setResult(response.data as { emotion: string; confidence: number });
   } catch {
     setError('Error reaching the server');
