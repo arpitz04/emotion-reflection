@@ -5,6 +5,11 @@ import os
 app = Flask(__name__)
 CORS(app)
 
+# New route for root
+@app.route('/')
+def index():
+    return "Emotion Reflection Tool backend is running!"
+
 @app.route('/analyze', methods=['POST'])
 def analyze():
     data = request.get_json()
