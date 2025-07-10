@@ -45,15 +45,11 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
----
-
-## ⚠️ Missing `node_modules`?
+##  Missing `node_modules`?
 
 To keep the project ZIP file within the 50 MB size limit, I’ve left out the `node_modules` folder from the frontend. That folder usually takes up a lot of space because it holds all the packages the app depends on.
 
 Once you’ve unzipped the project, just open a terminal, go into the `frontend` folder using:
 
-```bash
 cd frontend
 npm install
-``
